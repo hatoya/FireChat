@@ -20,9 +20,9 @@ $(function(){
         var message = content.val().message;
 
         var nameElement = $('<span>').text(userName);
-        var messageElement = $('<li>').text(message).prepend(nameElement);
+        var messageElement = $('<p>').text(message);
 
-        contentField.append(messageElement);
+        contentField.append($('<li>').prepend(messageElement).prepend(nameElement));
 
         $('.contentArea').scrollTop(contentField[0].scrollHeight);
     });
