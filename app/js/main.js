@@ -24,6 +24,6 @@ $(function(){
 
         contentField.append(messageElement);
 
-        contentField[0].scrollTop = contentField[0].scrollHeight;
+        $('.contentArea').scrollTop(contentField[0].scrollHeight);
     });
 });
