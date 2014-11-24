@@ -22,8 +22,6 @@ $(function(){
         var nameElement = $('<span>').text(userName);
         var messageElement = $('<p>').text(message);
 
-        //var messageElement = $('<li>').text(message).prepend(nameElement);
-
         contentField.append($('<li>').prepend(messageElement).prepend(nameElement));
 
         $('.contentArea').scrollTop(contentField[0].scrollHeight);
