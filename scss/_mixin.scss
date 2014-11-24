@@ -1,0 +1,18 @@
+@mixin positionType($position, $top, $left){
+	position: $position;
+	top: $top;
+	left: $left;
+}
+
+@mixin clearfix(){
+	content: "";
+	display: block;
+	clear: both;
+}
+
+@mixin animationPos($top, $left, $height, $width){
+	top: $top;
+	left: $left;
+	width: $width ;
+	height: $height;
+}

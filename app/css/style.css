@@ -1,5 +1,54 @@
+@charset "UTF-8";
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: #eee;
+  font-family: "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+a {
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+::selection {
+  background: transparent;
+}
+
 body {
   background: #eee;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.main {
+  min-height: 500px;
+  width: 320px;
+  margin: 0 auto;
+  background: white;
 }
 
 /*# sourceMappingURL=style.css.map */
