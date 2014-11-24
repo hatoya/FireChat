@@ -12,7 +12,6 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
 }
 
 body {
-  height: 100%;
   width: 100%;
   background: #fff;
   font-family: "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
@@ -42,6 +41,7 @@ h1 {
   font-size: 30px;
   text-align: center;
   margin-bottom: 10px;
+  color: #fdffe3;
 }
 
 .main {
@@ -49,8 +49,9 @@ h1 {
   min-height: 500px;
   width: 320px;
   margin: 0 auto;
-  border-radius: 5px;
-  background: #eee;
+  padding-top: 10px;
+  color: #242729;
+  background: #242729;
 }
 .main > div {
   margin-bottom: 10px;
@@ -58,13 +59,14 @@ h1 {
 
 .nameArea {
   text-align: center;
+  color: #fdffe3;
 }
 
 .contentArea {
   height: 380px;
   width: 90%;
   margin: 0 auto;
-  background: white;
+  background: #c6491a;
   overflow: scroll;
 }
 .contentArea ul li {
@@ -73,7 +75,7 @@ h1 {
   width: 85%;
   margin: 20px auto;
   padding: 5px;
-  background: #eee;
+  background: #fdffe3;
   border-radius: 5px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
@@ -84,9 +86,12 @@ h1 {
   left: 20px;
   height: 20px;
   width: 20px;
-  background: #eee;
+  background: #fdffe3;
   -webkit-transform: rotate(45deg);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.contentArea ul li span {
+  color: #c6491a;
 }
 .contentArea ul li p {
   position: relative;
