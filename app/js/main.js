@@ -9,15 +9,17 @@ $(function(){
         if(e.keyCode == 13){
             var userName;
             var content = inputField.val();
-            
+
             if(nameField.val() === ""){
                 userName = "Anonymous";
             }else{
                 userName = nameField.val();
             }
 
-            firebaseURL.push({name: userName, message: content});
-            inputField.val('');
+            if(content !== ""){
+                firebaseURL.push({name: userName, message: content});
+                inputField.val('');
+            }
         }
     });
 

@@ -1,6 +1,5 @@
 @charset "UTF-8";
 html {
-  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -13,7 +12,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
 
 body {
   width: 100%;
-  background: #fff;
+  background: #242729;
   font-family: "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
 }
 
@@ -97,6 +96,7 @@ h1 {
   position: relative;
   margin-top: 10px;
   text-align: center;
+  word-wrap: break-word;
   z-index: 1;
 }
 
