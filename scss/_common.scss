@@ -32,8 +32,7 @@ ul {
 
 input {
     outline: none;
-}
-
-::selection{
-    background: rgba(0, 0, 0, 0);
+    &::selection {
+        background: rgba(0, 0, 0, 0);
+    }
 }
