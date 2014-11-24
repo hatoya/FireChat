@@ -31,6 +31,10 @@ ul {
   list-style: none;
 }
 
+input {
+  outline: none;
+}
+
 ::selection {
   background: transparent;
 }
@@ -38,13 +42,37 @@ ul {
 h1 {
   font-size: 30px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .main {
+  position: relative;
   min-height: 500px;
   width: 320px;
   margin: 0 auto;
   background: #eee;
+}
+.main > div {
+  margin-bottom: 10px;
+}
+
+.nameArea {
+  text-align: center;
+}
+
+.contentArea {
+  height: 380px;
+  width: 90%;
+  margin: 0 auto;
+  background: white;
+  overflow: scroll;
+}
+
+.inputArea {
+  text-align: center;
+}
+.inputArea input {
+  width: 90%;
 }
 
 /*# sourceMappingURL=style.css.map */

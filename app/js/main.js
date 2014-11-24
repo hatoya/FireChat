@@ -1,9 +1,9 @@
 $(function(){
     var firebaseURL = new Firebase("https://fiery-torch-2959.firebaseio.com/");
 
-    var nameField = $('#userName');
-    var inputField = $('#inputContent');
-    var contentField = $('.content ul');
+    var nameField = $('.inputName');
+    var inputField = $('.inputContent');
+    var contentField = $('.contentArea ul');
 
     inputField.keypress(function(e){
         if(e.keyCode == 13){
@@ -15,7 +15,7 @@ $(function(){
         }
     });
 
-    firebaseURL.limit(10).on('child_added', function(content){
+    firebaseURL.limit(50).on('child_added', function(content){
         var userName = content.val().name;
         var message = content.val().message;
 

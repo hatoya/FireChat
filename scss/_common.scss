@@ -30,6 +30,10 @@ ul {
     list-style: none;
 }
 
+input {
+    outline: none;
+}
+
 ::selection{
     background: rgba(0, 0, 0, 0);
 }

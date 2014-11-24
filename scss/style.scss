@@ -4,11 +4,35 @@
 h1 {
     font-size: 30px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .main {
+    position: relative;
     min-height: 500px;
     width: 320px;
     margin: 0 auto;
     background: #eee;
+    & > div {
+        margin-bottom: 10px;
+    }
+}
+
+.nameArea {
+    text-align: center;
+}
+
+.contentArea {
+    height: 380px;
+    width: 90%;
+    margin: 0 auto;
+    background: white;
+    overflow: scroll;
+}
+
+.inputArea {
+    text-align: center;
+    input {
+        width: 90%;
+    }
 }
