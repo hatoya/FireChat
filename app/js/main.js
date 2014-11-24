@@ -7,15 +7,21 @@ $(function(){
 
     inputField.keypress(function(e){
         if(e.keyCode == 13){
-            var userName = nameField.val();
+            var userName;
             var content = inputField.val();
+            
+            if(nameField.val() === ""){
+                userName = "Anonymous";
+            }else{
+                userName = nameField.val();
+            }
 
             firebaseURL.push({name: userName, message: content});
             inputField.val('');
         }
     });
 
-    firebaseURL.limit(50).on('child_added', function(content){
+    firebaseURL.limit(10).on('child_added', function(content){
         var userName = content.val().name;
         var message = content.val().message;
 
